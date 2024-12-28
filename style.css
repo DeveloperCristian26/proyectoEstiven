@@ -106,11 +106,12 @@ header {
 }
 
 nav .togglebtn {
-    width: 90px;
+    width: 40px;
     height: 90px;
     position: absolute;
     top: 45px;
     right: 3%;
+    left: 460px;
     z-index: 5;
     cursor: pointer;
     display: none;
@@ -272,7 +273,7 @@ nav .navlinks li a {
         right: -100%;
         bottom: 0;
         width: 60%;
-        height: 100vh;
+        height: 100px;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
@@ -296,16 +297,54 @@ nav .navlinks li a {
 }
 
 @media(max-width:768px) {
+    
     .container {
         flex-direction: column;
-        padding-top: 2rem
+        padding-top: -2rem
     }
 
     .hero-text {
-        padding: 40px 0px;
+        padding: 60px 0px;
+        margin: -10px;
     }
+
+    .casp{
+        position: relative;
+        left: 30px;
+    }
+
+    .Title-h1{
+        position: relative;
+        margin: 0px;
+        left: 5px;
+    }
+
+    .btn-group{
+        position: relative;
+        left: -10px;
+    }
+
+    .social{
+        position: relative;
+        left: 10px;
+        height: 70px;
+    }
+
 }
 
+@media(max-width:930px) {
+
+    .informacion-eventos{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card{
+        width: 10px;
+        height: 350px;
+    }
+}
+            
 /* aca esta lo de card */
 
 h1 {
@@ -318,8 +357,9 @@ h1 {
 }
 
 
-.container {
+.container-section {
     position: relative;
+    top: 30px;
     width: 100%;
     display: flex;
     max-width: 1100px;
@@ -447,7 +487,7 @@ h1 {
     text-align:center;
     font-size:35px; 
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index: 3;
+    z-index: 2;
     transition: all 300ms ease;
     }
     
@@ -456,9 +496,27 @@ h1 {
         }
     
 @media only screen and (min-width:320px) and (max-width:768px){
+
+    .container-section{
+        margin: auto; 
+        width: 350px;
+        flex-direction: column;
+        position: relative;
+        left: -20px;
+        top: 40px;
+
+    }
+
     .btn-wsp{
         width:63px;
         height:63px;
         line-height: 66px;
-	}
+        position: relative;
+        left: 470px;
+        top: 10px;
+        bottom: 15px;
+
+    }
 } 
+
+
